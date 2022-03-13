@@ -1,7 +1,13 @@
+import CodashCard from './CodashCard';
+import EmailForm from './EmailForm';
+import PerformanceDriven from './PerformanceDriven';
+
 export default function Home() {
 	return (
-		<div>
-			<h1>Inside Home component</h1>
+		<div className="flex flex-col">
+			<CodashCard/>
+			<PerformanceDriven/>
+			<EmailForm/>
 		</div>
 	);
 }

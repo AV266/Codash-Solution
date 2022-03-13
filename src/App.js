@@ -9,6 +9,9 @@ import Verticals from './modules/verticals';
 import 'primereact/resources/themes/lara-light-indigo/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
+// import CodashCard from './modules/CodashCard';
+// import EmailForm from './modules/EmailForm';
+// import PerformanceDriven from './modules/PerformanceDriven';
 
 function App() {
   return (
