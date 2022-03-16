@@ -1,5 +1,6 @@
 import CodashCard from './CodashCard';
 import EmailForm from './EmailForm';
+import Footer from './Footer';
 import PerformanceDriven from './PerformanceDriven';
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
 			<CodashCard/>
 			<PerformanceDriven/>
 			<EmailForm/>
+			<Footer/>
 		</div>
 	);
 }

@@ -1,7 +1,6 @@
 import React from 'react'
 import { InputText } from 'primereact/inputtext';
 import { InputTextarea } from 'primereact/inputtextarea';
- 
 
  
 
@@ -14,20 +13,25 @@ function EmailForm() {
     { id: '3', value: 'post 3',labelText:'Subject' },
 ];
 const list =mydata.map(item => (
-    <span key={item.id} className="p-float-label">
-    <InputText id={item.id} value={item.value} onChange={(e) => setValue(e.target.value)} />
-    <label className='pt-1' htmlFor={item.id}>{item.labelText}</label>
+    <span key={item.id} className="p-float-label w-full lg:max-w-xl mx-auto">
+    <InputText id={item.id} className="w-full" value={item.value} onChange={(e) => setValue(e.target.value)} />
+    <label className='pt-1 w-full'  htmlFor={item.id}>{item.labelText}</label>
 </span>
  
     ))
 
+  
+
   return (
-    <div className ="relative px-10 mt-20 grid grid-cols-1 gap-4 lg:grid-cols-4 lg:grid-rows-5 lg:gap-8 top-10 mx-auto">
-        <div className='lg:row-span-3 text-xl font-sans text-center'>Write a message<div className='text-right mt-2'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum dolor est a cum molestias eum dolorum, veniam blanditiis excepturi cumque!</div></div>
+    <div className ="relative px-10 mt-20 top-10 mx-auto grid grid-cols-1 md:grid-cols-2 md:grid-rows-10 gap-4 ">
+        <div className=' text-xl font-sans text-center row-span-3'>Write a message
+            <div className='text-center lg:text-right mt-2'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum dolor est a cum molestias eum dolorum, veniam blanditiis excepturi cumque!
+            </div>
+        </div>
         {list}
-        <label className='pt-1 text-lg lg:col-span-3'>Message:</label>
-        <InputTextarea className='lg:col-span-3 row-span-3' autoResize />
-            
+        <label className='pt-1 text-lg flex md:justify-self-end row-span-4'>Message:</label>
+        <InputTextarea className='row-span-3 h-52' autoResize />
+          
     </div>
     )
 }

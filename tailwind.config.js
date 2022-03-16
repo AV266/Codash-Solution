@@ -23,4 +23,8 @@ module.exports = {
   },
   plugins: [],
   important: true,
+  screens: {
+    'xs':'340px',
+    'sm1':'740px',
+  }
 }

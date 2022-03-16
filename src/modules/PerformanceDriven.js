@@ -21,9 +21,9 @@ const list =mydata.map(item => (
         </div>
     ))
   return (
-    <div className='bg-cyan-700 p-7 mt-9 ml-9 mr-9 h-fit'>
+    <div className='bg-cyan-700  mt-9 mx-auto h-fit'>
     <div className='flex justify-center text-3xl text-slate-100 pb-6'>we create awesomeness</div>
-    <div className ="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 mx-5 md:gap-8">
+    <div className ="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 mx-5 md:gap-8">
     {list}
     </div>
     </div>
